@@ -8,9 +8,17 @@ will contain navbar -->
 <head>
   <meta charset="utf-8">
   <title></title>
+  <!-- font -->
+  <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento" rel="stylesheet">
+
+
+  <!-- Icon -->
+  <link rel="icon" href="favicon.ico">
+
   <!-- CSS only -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="stylesheet" href="{% static 'css/base.css' %}">
+  <link rel="stylesheet" href="{% static 'css/home.css'%}">
 
   <!-- JS, Popper.js, and jQuery -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -20,31 +28,31 @@ will contain navbar -->
 
 <body>
   <nav class="navbar bg-primary navbar-expand-lg navbar-dark">
-      <a class="navbar-brand navImage" href="{% url 'home' %}">Home</a>
-       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand navImage" href="{% url 'home' %}">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-              <a class="nav-link navElem" href="{% url 'home' %}">About</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link navElem" href="{% url 'my_website:work' %}">My Work</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link navElem" href="{% url 'my_website:resume' %}">Resume</a>
-          </li>
+        <li class="nav-item">
+          <a class="nav-link navElem" href="{% url 'home' %}">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link navElem" href="{% url 'my_website:work' %}">My Work</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link navElem" href="{% url 'my_website:resume' %}">Resume</a>
+        </li>
       </ul>
-   </div>
+    </div>
   </nav>
 
-  <div class="container">
-    {% block body_block %}
+  <!-- <div class="container"> -->
+  {% block body_block %}
 
-    {% endblock %}
+  {% endblock %}
 
-  </div>
+  <!-- </div> -->
 </body>
 
 </html>

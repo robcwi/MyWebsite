@@ -1,0 +1,14 @@
+.intro,  .contact{
+  text-align: center;
+  background-color: #00A7E1;
+  padding-bottom: 250px;
+  font-family: Montserrat;
+}
+
+.detail{
+  padding-top: 250px;
+  padding-bottom: 250px;
+  text-align: center;
+  font-family: Montserrat;
+
+}
